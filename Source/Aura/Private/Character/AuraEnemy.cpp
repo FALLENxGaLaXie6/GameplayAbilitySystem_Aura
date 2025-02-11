@@ -18,15 +18,13 @@ void AAuraEnemy::BeginPlay()
 	
 }
 
-// Called every frame
-void AAuraEnemy::Tick(float DeltaTime)
+void AAuraEnemy::HighlightActor()
 {
-	Super::Tick(DeltaTime);
+	bHighlighted = true;
 }
 
-// Called to bind functionality to input
-void AAuraEnemy::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void AAuraEnemy::UnHighlightActor()
 {
-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	bHighlighted = false;
 }
 
